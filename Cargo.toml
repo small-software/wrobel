@@ -1,8 +1,9 @@
 [package]
-name = "wrobel"
+name = "grzesiekb_wrobel"
 version = "0.1.0"
-authors = ["grzesiekb, grzesiek.bylica@small-software.com"]
+authors = ["grzesiek.bylica@small-software.com"]
 edition = "2021"
+description = "A library with collection of components for yew"
 license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
