@@ -1,2 +1,4 @@
 # wrobel
-Please do not use this version, but sgb_wrobel
+Components for yew
+
+## Project under development, please do not use for the time being.
