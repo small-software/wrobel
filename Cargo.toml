@@ -1,6 +1,6 @@
 [package]
 name = "grzesiekb_wrobel"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["grzesiek.bylica@small-software.com"]
 edition = "2021"
 description = "A library with collection of components for yew https://small-software.com"
