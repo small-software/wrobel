@@ -101,14 +101,13 @@ pub fn TreeColumns(props: &Props) -> Html {
         <Global css={s} />
         //class={css!(r#""#)}
         <div class="page-wrap">
-            <section class="main-content" role="main">
-                {props.main_content.to_owned()}
-            </section>
 
             <nav class="main-nav" role="navigation">
                 {props.links.to_owned()}
             </nav>
-
+            <section class="main-content" role="main">
+                {props.main_content.to_owned()}
+            </section>
             <aside class="main-sidebar" role="complementary">
                 {props.sidebar.to_owned()}
             </aside>
