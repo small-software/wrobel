@@ -1,6 +1,6 @@
 [package]
 name = "sgb_wrobel"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["grzesiek.bylica@small-software.com"]
 edition = "2021"
 description = "A library with collection of components for yew https://small-software.com"
@@ -9,8 +9,8 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#stylist = "0.11"
-yew = { version="0.20", features=["csr"] }
+stylist = { version="0.12.0", features=["yew_integration"]}
+yew = { version="0.20.0", features=["csr"] }
 #console_error_panic_hook = "0.1.7"
 #console_log = "0.2.0"
 #log = "0.4.17"
