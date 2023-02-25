@@ -1,7 +1,6 @@
-use stylist::css;
+use stylist::{css, StyleSource};
 use stylist::yew::Global;
 use yew::prelude::*;
-use stylist::style;
 
 
 #[derive(Properties, PartialEq)]
@@ -13,9 +12,7 @@ pub struct Props {
 
 #[function_component]
 pub fn TreeColumns(props: &Props) -> Html {
-    html! {
-        <>
-        <Global css=r#"
+    let s: StyleSource = css!(r#"
             .page-wrap {
                 display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
                 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -34,7 +31,12 @@ pub fn TreeColumns(props: &Props) -> Html {
                 -webkit-flex: 1;          /* Chrome */
                 -ms-flex: 1;              /* IE 10 */
                 flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-            }"# />
+            }"#);
+
+
+    html! {
+        <>
+        <Global css={s} />
         //class={css!(r#""#)}
         <div class="page-wrap">
             <section class="main-content" role="main">
