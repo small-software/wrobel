@@ -14,7 +14,7 @@ pub struct Props {
 #[function_component]
 pub fn TreeColumns(props: &Props) -> Html {
     html! {
-
+        <>
         <Global css=r#"
             .page-wrap {
                 display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -49,5 +49,6 @@ pub fn TreeColumns(props: &Props) -> Html {
                 {props.sidebar.to_owned()}
             </aside>
         </div>
+        </>
     }
 }
