@@ -1,4 +1,5 @@
-use stylist::yew::styled_component;
+use stylist::css;
+use stylist::yew::Global;
 use yew::prelude::*;
 
 
@@ -21,15 +22,15 @@ pub fn TreeColumns(props: &Props) -> Html {
                 display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
         "#)}>
             <section class="main-content" role="main">
-                {props.main_content.into()}
+                {props.main_content.to_owned()}
             </section>
 
             <nav class="main-nav" role="navigation">
-                {props.links.into()}
+                {props.links.to_owned()}
             </nav>
 
             <aside class="main-sidebar" role="complementary">
-                {props.sidebar.into()}
+                {props.sidebar.to_owned()}
             </aside>
         </div>
     }
