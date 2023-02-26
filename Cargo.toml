@@ -1,6 +1,6 @@
 [package]
 name = "sgb_wrobel"
-version = "0.1.8"
+version = "0.1.9"
 authors = ["grzesiek.bylica@small-software.com"]
 edition = "2021"
 description = "A library with collection of components for yew https://small-software.com"
