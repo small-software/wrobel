@@ -10,8 +10,7 @@ pub fn Btn() -> Html {
                 .btn {
                     padding: .3em .8em;
                     border: 1px solid #446d88;
-                    background: #58a linear-gradient(#77a0bb, #58a);
-                    /* border-radius: .2em; */
+                    background: #58a linear-gradient(#77a0bb, #58a); /* border-radius: .2em; */
                     box-shadow: 0 .05em .25em gray;
                     color: white;
                     text-shadow: 0 -.05em .05em #335166;
