@@ -5,7 +5,6 @@ use yew::prelude::*;
 
 #[function_component]
 pub fn Grid() -> Html {
-    // base on https://www.youtube.com/watch?v=eu4TRpAhTpM
     let s: StyleSource = css!(r#"
                 body {
                     font-family: 'Open Sans', sans-serif;
@@ -13,32 +12,25 @@ pub fn Grid() -> Html {
                     text-align: center;
                     margin:0px;
                 }
-                .row {
-                    margin:0px;
-                    padding:0px;
-                }
-                w-header {
-                    padding: 1rem 2rem 4rem;
-                }
 
-                .w-container {
+                .container {
                     max-width: 1200px;
                     margin: 0 auto;
                 }
-                .w-row {
+                .row {
                     display:flex;
                     gap: 10px;
                     margin-bottom: 10px;
                 }
-                .w-column {
+                .column {
                     background-color: lightgray;
                     padding: 1rem 1rem;
                     flex: 1;
                 }
-                .w-col-two-thirds {
+                .col-two-thirds {
                     flex: 2;
                 }
-                .w-content-area {
+                .content-area {
                     margin: 0 auto;
                     width: 100%;
                     display: flex;
@@ -47,10 +39,10 @@ pub fn Grid() -> Html {
                 }
 
                 @media only screen and (max-width: 768px) {
-                    .w-row {
+                    .row {
                         flex-wrap: wrap;
                     }
-                    .w-column {
+                    .column {
                         flex-basis: 100%;
                     }
                 }
