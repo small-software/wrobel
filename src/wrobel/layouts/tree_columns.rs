@@ -12,6 +12,9 @@ pub struct Props {
 
 #[function_component]
 pub fn TreeColumns(props: &Props) -> Html {
+
+    // base on https://css-tricks.com/using-flexbox/
+
     let s: StyleSource = css!(r#"
             .page-wrap {
                 display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
