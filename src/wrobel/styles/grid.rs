@@ -11,7 +11,10 @@ pub fn Grid() -> Html {
                     font-family: 'Open Sans', sans-serif;
                     color: #141414;
                     text-align: center;
-                    padding: 1rem;
+                }
+                .row {
+                    margin:0px;
+                    padding:0px;
                 }
                 w-header {
                     padding: 1rem 2rem 4rem;

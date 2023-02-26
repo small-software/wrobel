@@ -1,6 +1,6 @@
 [package]
 name = "sgb_wrobel"
-version = "0.1.9"
+version = "0.1.10"
 authors = ["grzesiek.bylica@small-software.com"]
 edition = "2021"
 description = "A library with collection of components for yew https://small-software.com"
@@ -16,7 +16,6 @@ yew = { version="0.20.0", features=["csr"] }
 #log = "0.4.17"
 
 [profile.release]
-# opt-level = 3 # fast and small wasm
 strip = true         # automatically strip symbols from the binary # warning need disable for bloat
 opt-level = "s"      # Optimize for size
 lto = true           # Enable link time optimization
