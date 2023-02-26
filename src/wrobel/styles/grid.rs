@@ -11,6 +11,7 @@ pub fn Grid() -> Html {
                     font-family: 'Open Sans', sans-serif;
                     color: #141414;
                     text-align: center;
+                    margin:0px;
                 }
                 .row {
                     margin:0px;
@@ -38,12 +39,11 @@ pub fn Grid() -> Html {
                     flex: 2;
                 }
                 .w-content-area {
+                    margin: 0 auto;
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                    color: white;
-                    background: black;
                 }
 
                 @media only screen and (max-width: 768px) {
