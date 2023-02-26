@@ -13,28 +13,28 @@ pub fn Grid() -> Html {
                     text-align: center;
                     padding: 1rem;
                 }
-                header {
+                w-header {
                     padding: 1rem 2rem 4rem;
                 }
 
-                .container {
+                .w-container {
                     max-width: 1200px;
                     margin: 0 auto;
                 }
-                .row {
+                .w-row {
                     display:flex;
                     gap: 10px;
                     margin-bottom: 10px;
                 }
-                .column {
+                .w-column {
                     background-color: lightgray;
                     padding: 1rem 1rem;
                     flex: 1;
                 }
-                .col-two-thirds {
+                .w-col-two-thirds {
                     flex: 2;
                 }
-                .content-area {
+                .w-content-area {
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
@@ -44,10 +44,10 @@ pub fn Grid() -> Html {
                 }
 
                 @media only screen and (max-width: 768px) {
-                    .row {
+                    .w-row {
                         flex-wrap: wrap;
                     }
-                    .column {
+                    .w-column {
                         flex-basis: 100%;
                     }
                 }
